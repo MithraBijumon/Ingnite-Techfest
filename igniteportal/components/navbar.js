@@ -2,9 +2,24 @@ import React from 'react'
 
 const navbar = () => {
   return (
-      <div class="absolute top-0 w-screen h-20 z-[-2] bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#00091d_1px)] bg-[size:20px_20px] flex items-center">
-        <img src="/assets/logo.png" alt="Ignite Techfest Logo" className='invert h-15 m-8' />
+    <div class="absolute top-0 w-screen h-25 z-[-2] flex items-center justify-between">
+      <img src="/assets/logo.png" alt="Ignite Techfest Logo" className='invert h-15 m-8' />
+
+      <div class="flex items-center justify-center gap-4">
+        <a href="#about" class="text-white hover:text-gray-300">About</a>
+        <a href="#events" class="text-white hover:text-gray-300">Incentives</a>
+        <a href="#Collabration" class="text-white hover:text-gray-300">Collabrations</a>
+        <a href="#contact" class="text-white hover:text-gray-300">Contact us</a>
+        <a href="#faq" class="text-white hover:text-gray-300">FAQs</a>
+      
+
+      <button class="relative inline-flex items-center justify-center p-0.5  me-7 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-red-200 via-red-300 to-yellow-200 group-hover:from-red-200 group-hover:via-red-300 group-hover:to-yellow-200 dark:text-white dark:hover:text-gray-900 focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400">
+        <span class="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-transparent group-hover:dark:bg-transparent">
+          Register Now!!
+        </span>
+      </button>
       </div>
+    </div>
 
 
   )

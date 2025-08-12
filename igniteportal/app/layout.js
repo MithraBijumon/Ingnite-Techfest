@@ -12,6 +12,10 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body>
         <Navbar />
+        <div className="fixed inset-0 -z-10">
+          <div className="absolute inset-0 bg-[url('/assets/bg.png')] bg-cover bg-center" />
+          <div className="absolute inset-0 bg-black opacity-60" />
+        </div>
         {children}
       </body>
     </html>
