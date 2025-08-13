@@ -12,18 +12,20 @@ export default function Incentive() {
     ];
 
     return (
-        <div className="flex flex-col justify-center items-center mt-10 mb-10">
-            <h1 className="text-4xl font-bold text-white">Incentives</h1>
-            <main className="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-32 gap-4 justify-center items-center min-h-screen bg-transparent pt-10">
-                {cards.map((card, index) => (
-                    <FlipCard
-                        key={index}
-                        frontText={card.front}
-                        backText={card.back}
-                    />
+        <section id="incentive">
+            <div className="flex flex-col justify-center items-center mt-10 mb-10">
+                <h1 className="text-4xl font-bold text-white">Incentives</h1>
+                <main className="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-32 gap-4 justify-center items-center min-h-screen bg-transparent pt-10">
+                    {cards.map((card, index) => (
+                        <FlipCard
+                            key={index}
+                            frontText={card.front}
+                            backText={card.back}
+                        />
 
-                ))}
-            </main>
-        </div>
+                    ))}
+                </main>
+            </div>
+        </section>
     );
 }

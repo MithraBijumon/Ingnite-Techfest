@@ -15,12 +15,12 @@ export default function FlipCard({ frontText, backText }) {
         }`}
       >
         {/* Front Side */}
-        <div className="absolute w-full h-full bg-blue-500 text-white flex items-center justify-center rounded-2xl shadow-lg backface-hidden">
+        <div className="absolute w-full h-full bg-[#212121CC] text-white flex items-center justify-center rounded-2xl shadow-lg backface-hidden">
           <p className="text-xl font-bold">{frontText}</p>
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-green-500 text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
+        <div className="absolute w-full h-full bg-[#E9A319CC] text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
             <p className="text-xl font-bold">{backText}</p>
           
         </div>
