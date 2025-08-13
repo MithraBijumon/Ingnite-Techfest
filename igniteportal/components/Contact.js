@@ -44,10 +44,10 @@ const ContactCard = ({ member }) => {
       <p className="text-gray-400 mb-4">{member.role}</p>
       
       {/* Container for the social links */}
-      <div className="flex flex-col items-center gap-2">
-        <a href={`mailto:${member.email}`} className="text-white hover:underline">Email</a>
-        <a href={`https://instagram.com/${member.insta}`} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">Instagram</a>
-        <a href={`https://wa.me/${member.whatsapp}`} target="_blank" rel="noopener noreferrer" className="text-white hover:underline">WhatsApp</a>
+      <div className="flex items-center justify-around">
+        <a href={`mailto:${member.email}`} className="text-white hover:underline"><img src="/assets/mail.png" className='h-15 grayscale hover:grayscale-0 transition duration-300'></img></a>
+        <a href={`https://instagram.com/${member.insta}`}  target="_blank" rel="noopener noreferrer" className="me-2 text-white hover:underline"><img src="/assets/insta.png" className='h-10 grayscale hover:grayscale-0 transition duration-300'></img></a>
+        <a href={`https://wa.me/${member.whatsapp}`} target="_blank" rel="noopener noreferrer" className="text-white hover:underline"><img src="/assets/whatsapp.png" className='h-10 grayscale hover:grayscale-0 transition duration-300'></img></a>
       </div>
     </div>
   );
