@@ -1,29 +1,29 @@
-"use client";
-import { useState } from "react";
+import FlipCard from "./Flipcard"
+export default function Incentive() {
+    const cards = [
+        { front: "Incentive 1", back: "Details 1" },
+        { front: "Incentive 2", back: "Details 2" },
+        { front: "Incentive 3", back: "Details 3" },
+        { front: "Incentive 4", back: "Details 4" }, { front: "Incentive 4", back: "Details 4" },
+        { front: "Incentive 4", back: "Details 4" },
+        { front: "Incentive 4", back: "Details 4" }, { front: "Incentive 4", back: "Details 4" },
+        { front: "Incentive 4", back: "Details 4" },
 
-export default function Incentive({ frontText, backText }) {
-  const [flipped, setFlipped] = useState(false);
+    ];
 
-  return (
-    <div
-      className="w-64 h-40 perspective cursor-pointer"
-      onClick={() => setFlipped(!flipped)}
-    >
-      <div
-        className={`relative w-full h-full duration-700 transform-style-preserve-3d ${
-          flipped ? "rotate-y-180" : ""
-        }`}
-      >
-        {/* Front Side */}
-        <div className="absolute w-full h-full bg-blue-500 text-white flex items-center justify-center rounded-2xl shadow-lg backface-hidden">
-          <p className="text-xl font-bold">{frontText}</p>
+    return (
+        <div className="flex flex-col justify-center items-center mt-10 mb-10">
+            <h1 className="text-4xl font-bold text-white">Incentives</h1>
+            <main className="grid grid-cols-1 sm:grid-cols-3 sm:gap-x-32 gap-4 justify-center items-center min-h-screen bg-transparent pt-10">
+                {cards.map((card, index) => (
+                    <FlipCard
+                        key={index}
+                        frontText={card.front}
+                        backText={card.back}
+                    />
+
+                ))}
+            </main>
         </div>
-
-        {/* Back Side */}
-        <div className="absolute w-full h-full bg-green-500 text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
-          <p className="text-xl font-bold">{backText}</p>
-        </div>
-      </div>
-    </div>
-  );
+    );
 }
