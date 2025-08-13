@@ -16,7 +16,7 @@ export default function FlipCard({ frontText, backText }) {
       >
         {/* Front Side */}
         <div className="absolute w-full h-full bg-[#212121CC] text-white flex items-center justify-center rounded-2xl shadow-lg backface-hidden">
-          <p className="text-xl font-bold">{frontText}</p>
+          <p className="text-xl font-bold tracking-wide">{frontText}</p>
         </div>
 
         {/* Back Side */}
