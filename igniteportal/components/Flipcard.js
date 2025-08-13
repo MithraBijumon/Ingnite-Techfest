@@ -7,7 +7,7 @@ export default function FlipCard({ frontText, backText }) {
   return (
     <div
       className="w-64 h-70 perspective cursor-pointer"
-      onClick={() => setFlipped(!flipped)}
+      onMouseOver={() => setFlipped(!flipped)}
     >
       <div
         className={`relative w-full h-full duration-700 transform-style-preserve-3d ${
@@ -20,7 +20,7 @@ export default function FlipCard({ frontText, backText }) {
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-[#E9A319CC] text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
+        <div className="absolute w-full h-full bg-[#212121CC] text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
             <p className="text-xl font-bold">{backText}</p>
           
         </div>

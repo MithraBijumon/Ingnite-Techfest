@@ -2,7 +2,7 @@ import React from 'react'
 
 const navbar = () => {
   return (
-    <div className="absolute top-0 w-screen h-25 z-10 flex items-center justify-between">
+    <div className="fixed top-0 w-screen h-18 z-10 flex items-center justify-between bg-[#212121]">
       <img src="/assets/logo.png" alt="Ignite Techfest Logo" className='invert h-15 m-8' />
 
       <div className="flex items-center justify-center gap-7 me-10 text-[19px]">
