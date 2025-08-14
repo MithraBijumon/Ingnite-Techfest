@@ -15,3 +15,12 @@
 html, body {
   overflow-x: hidden;
 }
+.neon-yellow {
+  color: #fbff79; /* warm yellow */
+  text-shadow:
+    0 0 2px #ffea70,
+    0 0 4px #ffd84d,
+    0 0 6px #e6b800;
+}
+
+

@@ -21,7 +21,7 @@ export default function FlipCard({ frontText, backText }) {
         </div>
 
         {/* Back Side */}
-        <div className="absolute w-full h-full bg-gradient-to-br from-pink-300 via-red-400 to-yellow-200 text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
+        <div className="absolute w-full h-full bg-gradient-to-br from-yellow-200 via-yellow-400 to-yellow-200 text-white flex items-center justify-center rounded-2xl shadow-lg rotate-y-180 backface-hidden">
             <p className="text-xl font-bold">{backText}</p>
           
         </div>

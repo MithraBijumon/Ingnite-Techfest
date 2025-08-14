@@ -4,7 +4,7 @@ export default function Incentive() {
   return (
     <section id="about" className="py-20 px-6">
       <div className="flex flex-col justify-center items-center">
-        <h1 className="text-4xl font-bold text-white mb-12">About</h1>
+        <h1 className="text-4xl font-bold text-white mb-12 neon-yellow">About</h1>
 
         {/* Subtle warm background box */}
         <div className="bg-[#212121CC]

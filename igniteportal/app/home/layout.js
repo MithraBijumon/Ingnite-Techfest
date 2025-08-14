@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Navbar from "@/components/navbar";
 import ContactSection from "@/components/Contact";
 import Incentive from "@/components/Incentive";
@@ -13,15 +13,12 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <header>
-          <div>
-            <Navbar />
-          </div>
-        </header>
-        <div className="fixed inset-0 -z-10">
-          <div className="absolute inset-0 bg-black" />
-        </div>
+       
         {children}
+        <About />
+        <Incentive/>
+        <ContactSection />
+        
         <footer>
           
         </footer>
