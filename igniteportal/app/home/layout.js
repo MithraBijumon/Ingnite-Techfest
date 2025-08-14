@@ -1,6 +1,7 @@
 import { Poppins } from "next/font/google";
 import "../globals.css";
 import Navbar from "@/components/navbar";
+import Collabration from "@/components/Collabration";
 import ContactSection from "@/components/Contact";
 import Incentive from "@/components/Incentive";
 import About from "@/components/About"
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         {children}
         <About />
         <Incentive/>
+        <Collabration />
         <ContactSection />
         
         <footer>
