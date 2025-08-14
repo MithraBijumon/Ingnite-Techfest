@@ -22,5 +22,9 @@ html, body {
     0 0 4px #ffd84d,
     0 0 6px #e6b800;
 }
+[data-carousel-item].active {
+  opacity: 1 !important;
+  scale: 1 !important;
+}
 
 

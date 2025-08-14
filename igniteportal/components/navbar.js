@@ -1,11 +1,22 @@
+"use client"
 import React from 'react'
+import { useState } from "react";
+
 
 const navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="fixed top-0 w-screen h-18 z-10 flex items-center justify-between ">
+    <div className={`sm:fixed  top-0 w-screen  ${isOpen ? "h-auto" : "h-18"} z-10 flex flex-col sm:flex-row items-center justify-between `}>
+      <div className='flex'>
+      <div className="sm:hidden flex items-center justify-end">
+        <button onClick={() => setIsOpen(!isOpen)} className="text-white focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+        </button>
+      </div>
       <img src="/assets/logo.png" alt="Ignite Techfest Logo" className='invert h-15 m-8' />
+      </div>
 
-      <div className="flex items-center justify-center gap-7 me-10 text-[19px]">
+      <div className="sm:flex items-center justify-center gap-7 me-10 text-[19px] hidden">
         <a href="#about" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">About</a>
         <a href="#incentive" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">Incentives</a>
         <a href="#Collabration" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">Collabrations</a>
@@ -16,6 +27,21 @@ const navbar = () => {
             </span>
           </button>
       </div>
+
+
+
+      {/* Mobile Menu Button */}
+      
+
+      {/* Mobile Dropdown */}
+      {isOpen && (
+        <div className="sm:hidden flex flex-col items-center gap-4 mt-4 mb-7 overflow-clip">
+          <a href="#about" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">About</a>
+          <a href="#incentive" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">Incentives</a>
+          <a href="#Collabration" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">Collabrations</a>
+          <a href="#contact" className="text-white hover:text-[#ffff33] hover:[text-shadow:0_0_5px_#ffff33,0_0_10px_#ffff33,0_0_20px_#ffff33,0_0_40px_#ffff33] transition duration-300">Contact us</a>
+        </div>
+      )}
     </div>
 
 

@@ -9,6 +9,7 @@ export default function FlipCard({ frontText, backText }) {
       className="w-64 h-70 perspective cursor-pointer"
       onMouseEnter={() => setFlipped(!flipped)}
       onMouseLeave={() => setFlipped(!flipped)}
+      onClick={() => setFlipped(!flipped)}
     >
       <div
         className={`relative w-full h-full duration-700 transform-style-preserve-3d ${

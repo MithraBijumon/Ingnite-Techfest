@@ -6,9 +6,9 @@ import ContactSection from "@/components/Contact";
 export default function Home() {
   return (
     <>
-      <div className="flex  items-center justify-around min-h-screen text-white">
-        <div className="flex flex-col items-start justify-center gap-4">
-          <h1 className="text-9xl font-bold neon-yellow">
+      <div className="flex flex-col sm:flex-row items-center justify-around min-h-screen text-white">
+        <div className="flex flex-col items-center sm:items-start justify-center gap-7 sm:gap-4">
+          <h1 className="text-7xl sm:text-8xl md:text-9xl font-bold neon-yellow">
             iGNiTE
           </h1>
           <h3 className="text-2xl">tagline</h3>
@@ -18,7 +18,7 @@ export default function Home() {
             </span>
           </button>
         </div>
-        <img src="/assets/placeholder.png" alt="Ignite Techfest Logo" className='m-10 h-80' />
+        <img src="/assets/placeholder.png" alt="Ignite Techfest Logo" className='m-10 h-50 sm:h-80' />
       </div>
     </>
 
