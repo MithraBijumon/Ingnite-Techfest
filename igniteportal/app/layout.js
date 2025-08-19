@@ -19,9 +19,10 @@ export default function RootLayout({ children }) {
             <Navbar />
           </div>
         </header>
-        <div className="fixed inset-0 -z-10">
-          <div className="absolute inset-0 bg-black" />
+        <div className="fixed inset-0 -z-10" >
+          <div className="absolute inset-0 bg-black overflow-y-hidden" />
         </div>
+        
         {children}
         <Sidebar />
 
