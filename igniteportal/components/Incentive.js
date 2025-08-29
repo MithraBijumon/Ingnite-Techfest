@@ -1,7 +1,7 @@
 import FlipCard from "./Flipcard"
 export default function Incentive() {
     const cards = [
-        { front: "Incentive 1", back: "Details 1" },
+        { front: "Recognition and Patronage by Techfest, IIT Bombay", back: "Details 1" },
         { front: "Incentive 2", back: "Details 2" },
         { front: "Incentive 3", back: "Details 3" },
         { front: "Incentive 4", back: "Details 4" }, { front: "Incentive 4", back: "Details 4" },
